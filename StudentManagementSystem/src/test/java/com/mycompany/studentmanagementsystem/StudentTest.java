@@ -38,8 +38,8 @@ public class StudentTest {
     @Test
     public void TestUpdateStudentGradeFailure() {
         testStudents[0].setGrade(0, 0, 100);
-        String expected = "Grade updated.";
-        String output = testStudents[0].updateGrade(0, 1, 86);
+        String expected = "Grade not found.";
+        String output = testStudents[0].updateGrade(2, 2, 86);
         
         assertEquals(expected, output);
     }
