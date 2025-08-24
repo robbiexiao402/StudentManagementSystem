@@ -63,7 +63,7 @@ public class StudentManagementSystem {
                                 } else {
                                     System.out.println("Enter grade: ");
                                     int grade = Integer.parseInt(scanner.nextLine());
-                                    students[i].updateGrade(subject, term, grade);
+                                    System.out.println(students[i].updateGrade(subject, term, grade));
                                     break;
                                 }
                             }

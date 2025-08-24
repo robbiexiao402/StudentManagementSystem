@@ -31,12 +31,12 @@ public class Student extends Person {
         return subjectIndex >= 0 && subjectIndex < grades.length && termIndex >=0 && termIndex < grades[0].length;
     }
     
-    public void updateGrade(int subjectIndex, int termIndex, int grade) {
+    public String updateGrade(int subjectIndex, int termIndex, int grade) {
         if(getGrade(subjectIndex, termIndex) != -1) {
             setGrade(subjectIndex, termIndex, grade);
-            System.out.println("Grade updated.");
+            return "Grade updated.";
         } else {
-            System.out.println("Grade not found.");
+            return "Grade not found.";
         }
     }
     
