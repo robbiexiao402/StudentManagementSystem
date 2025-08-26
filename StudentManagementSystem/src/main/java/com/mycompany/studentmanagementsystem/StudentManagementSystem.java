@@ -82,9 +82,9 @@ public class StudentManagementSystem {
                 }
                 case 4 -> {
                     System.out.println("Student Reports: ");
-                    for (Student student : students) {
-                        if (student != null) {
-                            student.displayGrades();
+                    for (int i = 0; i < students.length; i++;) {
+                        if (students[i] != null) {
+                            students[i].displayGrades();
                         }
                     }
                 }
