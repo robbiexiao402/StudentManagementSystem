@@ -41,11 +41,18 @@ public class Student extends Person {
     }
     // Display student grades
     public void displayGrades() {
+        String resultStatus;
+        
         System.out.println("Grades for: " + getName());
         for (int i = 0; i < grades.length; i++) {
             System.out.print("Subject (" + (i+1) + "): ");
             for (int j = 0; j < grades[i].length; j++) {
-                System.out.print(grades[i][j] + " ");
+                if (grades[i][j] > 70) {
+                    resultStatus = "Good";
+                } else {
+                    resultStatus = "Bad";
+                }
+                System.out.print(grades[i][j] + " (" + resultStatus + ") ");
             }
             System.out.println();
         }
