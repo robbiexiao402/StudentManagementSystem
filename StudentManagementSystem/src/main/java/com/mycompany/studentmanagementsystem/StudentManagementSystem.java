@@ -54,7 +54,7 @@ public class StudentManagementSystem {
 
                 case 2 -> {
                     // Get student name
-                    System.out.println("Enter the name of the student: ");
+                    System.out.println("Enter name: ");
                     String name = scanner.nextLine();
                     boolean found = false;
                     // Search for student

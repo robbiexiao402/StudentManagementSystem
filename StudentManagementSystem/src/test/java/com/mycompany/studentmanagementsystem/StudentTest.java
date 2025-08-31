@@ -4,6 +4,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StudentTest {
+    // Title: Predefined test values in Java
+    // Author: ChatGPT
+    // Date: 31 August 2025
+    // Version: GPT-5
+    // Available: https://chatgpt.com/share/68b4a834-c7d8-8001-b324-075a0027651b
+    
+    
     private final Student[] testStudents = {
         new Student("Jimmy", 12, "001", 3, 2),
         new Student("Johnny", 12, "002", 3, 2),

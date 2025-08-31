@@ -41,20 +41,23 @@ public class Student extends Person {
     }
     // Display student grades
     public void displayGrades() {
-        String resultStatus;
+        int overallMark = 0;
         
         System.out.println("Grades for: " + getName());
         for (int i = 0; i < grades.length; i++) {
             System.out.print("Subject (" + (i+1) + "): ");
             for (int j = 0; j < grades[i].length; j++) {
-                if (grades[i][j] > 70) {
-                    resultStatus = "Good";
-                } else {
-                    resultStatus = "Bad";
-                }
-                System.out.print(grades[i][j] + " (" + resultStatus + ") ");
+                overallMark += grades[i][j];
+                System.out.print(grades[i][j] + " ");
             }
             System.out.println();
+        }
+        
+        overallMark = overallMark / 6;
+        if (overallMark > 60) {
+            System.out.println("Your overall aggregate was " + overallMark + " (Good)");
+        } else {
+            System.out.println("Your overall aggregate was " + overallMark + " (Bad)");
         }
     }
 }
